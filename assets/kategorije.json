@@ -1,0 +1,72 @@
+[
+
+    {
+        "id" : 1,
+        "nazivGlavneKat" : "Voce",
+        "idGlavneKat" : 1,
+        "podKateg" : [
+
+            {
+                "nazivPodKateg" : "Sveze",
+                "idPodKateg" : 1
+            },
+
+            {
+                "nazivPodKateg" : "Suvo",
+                "idPodKateg" : 2
+            },
+
+            {
+                "nazivPodKateg" : "Sok",
+                "idPodKateg" : 3
+            }
+
+        ]
+    },
+
+
+    {
+        "id" : 2,
+        "nazivGlavneKat" : "Povrce",
+        "idGlavneKat" : 2,
+        "podKateg" : [
+
+            {
+                "nazivPodKateg" : "Sveze",
+                "idPodKateg" : 1
+            },
+
+            {
+                "nazivPodKateg" : "Suvo",
+                "idPodKateg" : 2
+            },
+
+            {
+                "nazivPodKateg" : "Sok",
+                "idPodKateg" : 3
+            }
+
+        ]
+    },
+
+
+    {
+        "id" : 3,
+        "nazivGlavneKat" : "Zitarice",
+        "idGlavneKat" : 3,
+        "podKateg" : [
+
+            {
+                "nazivPodKateg" : "Sirove",
+                "idPodKateg" : 4
+            },
+
+            {
+                "nazivPodKateg" : "Pecene",
+                "idPodKateg" : 5
+            }
+
+        ]
+    }
+
+]

@@ -1,0 +1,32 @@
+[
+
+    {
+        "id" : 1,
+        "naziv" : "Pocetna",
+        "href" : "index.html"
+    },
+
+    {
+        "id" : 2,
+        "naziv" : "Prodavnica",
+        "href" : "prodavnica.html"
+    },
+
+    {
+        "id" : 3,
+        "naziv" : "Autor",
+        "href" : "autor.html"
+    },
+
+    {
+        "id" : 4,
+        "naziv" : "Kontakt",
+        "href" : "kontakt.html"
+    },
+    {
+        "id" : 5,
+        "naziv" : "Korpa",
+        "href" : "korpa.html"
+    }
+
+]

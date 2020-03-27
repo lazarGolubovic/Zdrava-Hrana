@@ -1,0 +1,879 @@
+@font-face {
+    src: url("PermanentMarker-Regular.ttf");
+    font-family: 'mojFont1';
+  }
+  @font-face {
+    src: url("Rancho-Regular.ttf");
+    font-family: 'mojFont2';
+  }
+
+$r1: 1200px;
+$r2: 1000px;
+$r3: 768px;
+$r4: 530px;
+$r5: 354px;
+
+@mixin r1 {
+    @media (max-width: #{$r1}){
+        @content;
+    }
+}
+@mixin r2 {
+    @media (max-width: #{$r2}){
+        @content;
+    }
+}
+@mixin r3 {
+    @media (max-width: #{$r3}){
+        @content;
+    }
+}
+@mixin r4{
+    @media (max-width: #{$r4}){
+        @content;
+    }
+}
+@mixin r5{
+    @media (max-width: #{$r4}){
+        @content;
+    }
+}
+*{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    background-color: #f7f7f7;
+    h1{
+        font-family: 'mojFont1';
+    }
+    h2{
+        text-align: center;
+        font-family: 'mojFont1';
+        margin: 5% 0%;
+        font-size: 3.2em;
+        color: rgb(0, 0, 0);  
+    }
+    h3{
+        text-align: center;
+        font-family: 'mojFont1';
+        margin: 5% 0%;
+        font-size: 3em;
+        color: rgb(0, 0, 0);  
+    }
+    p{
+        color: orange;
+        font-family: 'mojFont2';
+        font-size: 1.4em;
+    }
+
+    nav{
+
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 1003;
+        background-color: black;
+
+        @include r2{
+            display: none;
+        }
+    
+        .logo{
+            width: 30%;
+                .logoPic{
+                    max-width: 100%;
+                    height: auto;
+                    width: 170px;
+                    transition: 0.8s;
+                }
+                .logoPic1{
+                    width: 100px;
+                }
+    
+            a{
+    
+                img{
+    
+                    width: 160px;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+    
+        }
+        
+    }
+    #pojaviSide{
+        color:blue;
+        position: fixed;
+        z-index: 999;
+        top: 4%;
+        left: 4%;
+        text-decoration: none;
+        display: none;
+
+        @include r2{
+            display: block;
+        }
+
+        i{
+            color: #37c737;
+            font-size: 2em;
+        }
+
+    }
+        .sideNavigation{
+            width: 320px;
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            transform: translateX(-400px);
+            transition: 0.7s;
+    
+            ul{
+                list-style-type: none;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+    
+                li{
+                    margin: 10% 0%;
+                }
+            }
+            
+        }
+    
+        .side1{
+            transform: translateX(0px);
+        }
+    
+        .meni{
+            width: 60%;
+    
+            ul{
+                list-style-type: none;
+                margin-bottom: 0px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+    
+                li{
+    
+                    a{
+                        font-size: 1.3em;
+                        text-decoration: none;
+                        color: white;
+                        transition: 0.6s;
+    
+                        &:hover{
+    
+                            color: #55cf55;
+    
+                        }
+                    }
+    
+                }
+            }
+    
+        }
+    
+    .pojaviSide{
+        position: fixed;
+        z-index: 999;
+        top: 4%;
+        left: 4%;
+        text-decoration: none;
+        display: none;
+
+        i{
+            color: #c77037;
+            font-size: 2em;
+        }
+    }
+
+    .backTop{
+        position: fixed;
+        z-index: 999;
+        text-decoration: none;
+        bottom: 3%;
+        right: 3%;
+
+        i{
+            color: orange;
+            font-size: 2em;
+        }
+    }
+    
+    main{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../images/porodica.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        .zdravaHranaMain{
+    
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.548);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            h1{
+    
+                color: rgb(96, 219, 96);
+                font-size: 3em;
+                font-family: 'mojFont1';
+                text-align: center;
+               
+    
+            }
+            h2{
+                font-size: 2em;
+                color: palegoldenrod;
+                margin: 0;
+            }
+    
+            a{
+                text-decoration: none;
+    
+                i{
+                    color: orange;
+                    font-size: 3em;
+                    transition: 0.7s;
+    
+                    &:hover{
+                        transform: rotate(-44deg);
+                        color: lighten(orange, 10%);
+                    }
+                }
+            }
+    
+        }
+    }
+    
+    .transport{
+        margin: 5% 0%;
+        text-align: center;
+        box-shadow: 2px 7px 30px #bbb9b9;
+        padding: 1%;
+
+        .trIzbori{
+            border-right: 2px solid #d6d5d5a9;
+            
+            @include r3{
+                border-right: none;
+                border-bottom: 2px solid #d6d5d5a9;
+                padding: 1% 0%;
+            }
+            &:last-child{
+                border: none;
+            }
+            i{
+                color:#74d14c9e;
+                font-size: 3em;
+                transition: 0.7s;
+                &:hover{
+                    color: lighten(rgb(248, 196, 99), 10%);
+                }
+            }
+            h4{
+                font-size: 20px;
+                margin:4% 0%;
+            }
+        }
+    }
+    .black{
+        background-color: rgba(0, 0, 0, 0.582);
+        width: 100%;
+        height: 100%;
+    }
+    .noviProizvodi{
+        background: linear-gradient(217deg, #74d14cdc, rgb(255, 255, 255) 80.71%);
+        .vremeIsteka{
+            padding: 0px;
+            background-image: url("../images/shop.jpg");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:70vh ;
+            
+        @include r5{
+            height: 60vh;
+        }
+            text-align: center;
+            position: relative;
+            .clock-wrap{
+                position: absolute;
+                z-index: 999;
+                top: 30%;
+                left: 15px;
+                color: palegoldenrod;
+                width: 100%;
+                h4{
+                    font-size: 2.3em;
+                }
+                span{
+                    font-size: 1.4em;
+                    color: orange;
+                }
+
+            }
+            .clockinner{
+                padding-top: 1em;
+                margin-right: 0.4%;
+                background-color: rgba(0, 0, 0, 0.781);
+                @include r5{
+                    font-size: 10px;
+                }
+                &:last-child{
+                    margin: 0%;
+                }
+            }
+            .kupi{
+                padding-top: 45vh;
+                a{
+                    background: rgb(0, 0, 0);
+                    text-decoration: none;
+                    padding:15px ;
+                    border-radius: 30px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: orange;
+                    transition: 0.7s;
+                    &:hover{
+                        color: lighten(rgb(0, 0, 0), 10%);
+                        background-color: orange;
+                    }
+
+                }
+            }
+
+        }
+
+        .slajderProizvoda{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include r3{
+                padding: 5% 0%;
+            }
+            .autoplay{
+
+                width: 85%;
+                display: flex;
+                justify-content: center;
+
+                .pickAuto{
+                    height: 90%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    img{
+
+                        max-width: 100%;
+                        height: auto;
+                        width: 70%;
+
+                    }
+
+                }
+
+            }
+
+        }
+        #korpa{
+            #prodTabela{
+                .tabelaKorpa{
+                text-align: center;
+                display:flex;
+                justify-content: space-around;
+                width:100% !important;
+                tbody{
+                    width:100%;
+                }
+                .redTabele{
+                    display:flex;
+                    justify-content: space-around;
+                }
+                tr{
+                    display:flex;
+                    justify-content: space-around;
+                    width:100% !important;
+                    margin:5% 0%;
+                    
+                }
+                td{
+                    width:15%;
+                    display:flex;
+                    justify-content: center;
+                }
+                }
+            }
+        }
+    }
+
+    .prodavnica{
+        background-image: url('../images/background3.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 12%;
+        h2{
+            color: whitesmoke;
+        }
+    
+        #prodavnicaIzbori{
+    
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #03050348;
+            align-items: center;
+            padding:10px 0px ;
+            #kategorijeOpcije{
+                
+                width: 200px;
+                height: 40px;
+                color: rgb(255, 255, 255);
+                background-color: orange;
+                border-radius: 5px;
+                @include r3{
+                    width: 140px;
+                }
+                @include r4{
+                    width: 100px;
+                }
+            }
+            #kategorijeOpcijePod{
+
+                width: 200px;
+                height: 40px;
+                color: rgb(255, 255, 255);
+                background-color: orange;
+                border-radius: 5px;
+
+                @include r3{
+                    width: 140px;
+                }
+                @include r4{
+                    width: 100px;
+                }
+
+            }
+            #sort{
+                width: 200px;
+                height: 40px;
+                color: rgb(255, 255, 255);
+                background-color: orange;
+                border-radius: 5px;
+                
+                @include r3{
+                    width: 140px;
+                }
+                @include r4{
+                    width: 100px;
+                }
+            }
+    
+        }
+    
+    }
+
+    .shop{
+        margin-top: 5%;
+        
+        
+        .rowProd{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .prodCol{
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 3% 0%;
+
+                .proizvod{
+
+                    width: 80%;
+                    background-color: #6feb6f;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    border-radius: 6px;
+                    height: 400px;
+                    box-shadow: 10px 1px 20px rgba(0, 0, 0, 0.274);
+                    @include r3{
+                        width: 70%;
+                    }
+                    @include r5{
+                        width: 85%;
+                    }
+
+                    .pictureProd{
+
+                        width: 50%;
+                        background-color: whitesmoke;
+                        border-radius: 6px;
+                        padding: 3%;
+                        position: absolute;
+                        left: -9%;
+                        top: 15%;
+                        bottom: 15%;
+                        border: 4px solid #4fa34f;
+                        display: flex;
+                        align-items: center;
+
+                        img{
+
+                            max-width: 100%;
+                            height: auto;
+
+                        }
+
+                    }
+
+                    .infoProd{
+
+                        width: 40%;
+                        display: flex;
+                        text-align: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 37%;
+                        padding: 14% 0%;
+                        border-radius: 6px;
+
+                        h3{
+
+                            color: tomato;
+                            font-size: 2em;
+
+                        }
+
+                        p{
+
+                            font-weight: bold;
+                            font-size: 1.3em;
+
+                        }
+
+                        .poruciProd{
+
+                            margin-top: 5%;
+                            background-color: transparent;
+                            border: none;
+                            width: 100%;
+                            background-color: #6feb6f;
+                            line-height: 2.7em;
+                            border-radius: 6px;
+                            border: 4px solid whitesmoke;
+                            color: whitesmoke;
+                            font-weight: bold;
+                            transition: 0.6s;
+
+                            &:hover{
+
+                                background-color: whitesmoke;
+                                color: #6feb6f;
+
+                            }
+
+                        }
+
+
+                        .vrsta{
+
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 7%;
+
+                            h4{
+
+                                color: whitesmoke;
+                                font-size: 1.6em;
+                                padding-bottom: 3%;
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+    
+    
+    footer{
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 15vh;
+        
+        #copyright{
+            color: #e4a214;
+            font-size: 1.4em;
+            @include r3{
+                font-size: 1em;
+            }
+            @include r4{
+                font-size: 0.7em;
+            }
+
+        }
+        #aboutSite{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            ul{
+               
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                @include r4{
+                    padding-right: 20px;
+                    flex-direction: column;
+                    text-align: left;
+                    
+                 }
+               
+               
+                li{
+                    padding-left:20px;
+                    list-style-type: none;
+                    a{
+                        font-size: 1.2em;
+                        color: #fff;
+                        @include r3{
+                            font-size: 1em;
+                        }
+    
+                    }
+                }
+                }
+            }
+    }
+
+    .poslovanje{
+        background-color: #f7f7f7;
+
+        .rowPoslovanje{
+
+            margin: 4% 0% 8% 0%;
+
+            #opisFirme{
+
+                h3{
+
+                    color: #000;
+                    font-size: 2.4em;
+                    padding-bottom: 6%;
+
+                }
+
+                p{
+
+                    text-shadow: 1px 1px whitesmoke;
+                    font-weight: bold;
+                    text-align: justify;
+
+                }
+
+            }
+
+            .basta{
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+        }
+
+    }
+    #kontaktNaslov{
+        padding-top: 10%;
+        @include r3{
+            font-size: 2.5em;
+        }
+    }
+    .formaKontakt{
+        margin: 5% 0% 5% 0%;
+        background-color: #56d3565e;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            @include r3{
+                display: none;
+            }
+        }
+
+
+        form{
+            width: 40%;
+            display: flex;
+            padding:1% 0%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include r3{
+                width: 60%;
+            }
+            @include r4{
+                width: 80%;
+            }
+            @include r5{
+                width: 100%;
+            }
+            p{
+                color: red;
+            }
+            #areaKontakt,#birajVrstu,#mailKorisnika,#imeKorisnika{
+                border: 2px solid #56d356;
+                border-radius: 4px;
+                padding: 5px;
+                background-color: rgb(255, 255, 255);
+            }
+            #birajVrstu{
+                background-color: #56d356;
+                color: whitesmoke;
+            }
+
+            .greskaForme{
+
+                display: none;
+
+            }
+
+            .uspeh{
+
+                display: none;
+
+            }
+
+            .poljeForme{
+
+                width: 90%;
+                resize: none;
+
+            }
+
+            #dugmeSaljiForma{
+
+                background-color: #56d356;
+                border: none;
+                width: 30%;
+                line-height: 3em;
+                border-radius: 6px;
+
+            }
+
+        }
+
+    }
+    #autorNaslov{
+        padding-top: 10%;
+    }
+    #drzacAutor{
+        background-color: #6feb6f73;
+        #autor{
+            text-align: center;
+            padding: 2% 0%;
+        }
+        #sadrzajAutor{
+            text-align: justify;
+            padding: 2%;
+            margin: 0px auto;
+            @include r3{
+                width: 70%;
+            }
+            a{
+                padding: 5px 30px;
+                text-decoration: none;
+                color: orange;
+                background-color: rgba(0, 0, 0, 0.699);
+                border-radius: 5px;
+                transition: 1s;
+                &:hover{
+                    color:white;
+                    background-color: #034b03;
+                }
+            }
+        }
+    }
+
+}
+
+.slick-prev, .slick-next{
+
+    color: blue !important;
+    background-color: red;
+    border: none;
+    visibility: hidden;
+    position: relative;
+
+    &:before{
+
+        position: absolute !important;
+        content: '<';
+        width: 10px;
+        height: 20px;
+        top: 5%;
+        background-color: red;
+        color: cyan;
+        z-index: 999;
+
+    }
+
+}
+
+

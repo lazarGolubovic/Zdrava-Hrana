@@ -1,0 +1,250 @@
+[
+
+    {
+
+        "id" : 1,
+        "naziv" : "Jabuka",
+        "kategorija" : "Voce",
+        "kategId" : 1,
+        "podKateg" : "Sveze",
+        "podKategId" : 1,
+        "cena" : 100,
+        "putanja" : "images/apple.png"
+
+    },
+
+    {
+
+        "id" : 2,
+        "naziv" : "Sok od jabuke",
+        "kategorija" : "Voce",
+        "kategId" : 1,
+        "podKateg" : "Sok",
+        "podKategId" : 3,
+        "cena" : 110,
+        "putanja" : "images/appleJuice.png"
+
+    },
+
+    {
+
+        "id" : 3,
+        "naziv" : "Badem",
+        "kategorija" : "Voce",
+        "kategId" : 1,
+        "podKateg" : "Suvo",
+        "podKategId" : 2,
+        "cena" : 140,
+        "putanja" : "images/badem.png"
+
+    },
+
+    {
+
+        "id" : 4,
+        "naziv" : "Banana",
+        "kategorija" : "Voce",
+        "kategId" : 1,
+        "podKateg" : "Sveze",
+        "podKategId" : 1,
+        "cena" : 70,
+        "putanja" : "images/banana.png"
+
+    },
+
+    {
+
+        "id" : 5,
+        "naziv" : "Borovnica",
+        "kategorija" : "Voce",
+        "kategId" : 1,
+        "podKateg" : "Sveze",
+        "podKategId" : 1,
+        "cena" : 110,
+        "putanja" : "images/blueberry.png"
+
+    },
+
+    {
+
+        "id" : 6,
+        "naziv" : "Sok od borovnice",
+        "kategorija" : "Voce",
+        "kategId" : 1,
+        "podKateg" : "Sok",
+        "podKategId" : 3,
+        "cena" : 140,
+        "putanja" : "images/blueberryJuice.png"
+
+    },
+
+    {
+
+        "id" : 7,
+        "naziv" : "Celer",
+        "kategorija" : "Povrce",
+        "kategId" : 2,
+        "podKateg" : "Suvo",
+        "podKategId" : 2,
+        "cena" : 70,
+        "putanja" : "images/celery.png"
+
+    },
+
+    {
+
+        "id" : 8,
+        "naziv" : "Kukuruz",
+        "kategorija" : "Zitarica",
+        "kategId" : 3,
+        "podKateg" : "Pecena",
+        "podKategId" : 5,
+        "cena" : 110,
+        "putanja" : "images/corn.png"
+
+    },
+
+    {
+
+        "id" : 9,
+        "naziv" : "Jecam",
+        "kategorija" : "Zitarica",
+        "kategId" : 3,
+        "podKateg" : "Pecena",
+        "podKategId" : 5,
+        "cena" : 170,
+        "putanja" : "images/jecam.png"
+
+    },
+
+    {
+
+        "id" : 10,
+        "naziv" : "Pecurke",
+        "kategorija" : "Povrce",
+        "kategId" : 2,
+        "podKateg" : "Suvo",
+        "podKategId" : 2,
+        "cena" : 120,
+        "putanja" : "images/mushrooms.png"
+
+    },
+
+    {
+
+        "id" : 11,
+        "naziv" : "Ovas",
+        "kategorija" : "Zitarica",
+        "kategId" : 3,
+        "podKateg" : "Sirova",
+        "podKategId" : 4,
+        "cena" : 90,
+        "putanja" : "images/oats.png"
+
+    },
+
+    {
+
+        "id" : 12,
+        "naziv" : "Luk",
+        "kategorija" : "Povrce",
+        "kategId" : 2,
+        "podKateg" : "Sveze",
+        "podKategId" : 1,
+        "cena" : 115,
+        "putanja" : "images/onions.png"
+
+    },
+
+    {
+
+        "id" : 13,
+        "naziv" : "Narandza",
+        "kategorija" : "Voce",
+        "kategId" : 1,
+        "podKateg" : "Sveze",
+        "podKategId" : 1,
+        "cena" : 135,
+        "putanja" : "images/orange.png"
+
+    },
+
+    {
+
+        "id" : 14,
+        "naziv" : "Sok od narandze",
+        "kategorija" : "Voce",
+        "kategId" : 1,
+        "podKateg" : "Sok",
+        "podKategId" : 3,
+        "cena" : 110,
+        "putanja" : "images/orangeJuice.png"
+
+    },
+
+    {
+
+        "id" : 15,
+        "naziv" : "Krompir",
+        "kategorija" : "Povrce",
+        "kategId" : 2,
+        "podKateg" : "Suvo",
+        "podKategId" : 2,
+        "cena" : 80,
+        "putanja" : "images/potato.png"
+
+    },
+
+    {
+
+        "id" : 16,
+        "naziv" : "Paradajz",
+        "kategorija" : "Povrce",
+        "kategId" : 2,
+        "podKateg" : "Sveze",
+        "podKategId" : 1,
+        "cena" : 130,
+        "putanja" : "images/tomato.png"
+
+    },
+
+    {
+
+        "id" : 17,
+        "naziv" : "Sok od paradajza",
+        "kategorija" : "Povrce",
+        "kategId" : 2,
+        "podKateg" : "Sok",
+        "podKategId" : 3,
+        "cena" : 120,
+        "putanja" : "images/tomatoJuice.png"
+
+    },
+
+    {
+
+        "id" : 18,
+        "naziv" : "Sok od lubenice",
+        "kategorija" : "Povrce",
+        "kategId" : 2,
+        "podKateg" : "Sok",
+        "podKategId" : 3,
+        "cena" : 160,
+        "putanja" : "images/watermelonJuice.png"
+
+    },
+
+    {
+
+        "id" : 19,
+        "naziv" : "Psenica",
+        "kategorija" : "Zitarica",
+        "kategId" : 3,
+        "podKateg" : "Sirova",
+        "podKategId" : 4,
+        "cena" : 100,
+        "putanja" : "images/wheat.png"
+
+    }
+
+]

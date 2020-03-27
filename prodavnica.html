@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="decription" content="Prodavnica sa najboljim asortimanom proizvoda u nasoj zemlji."/>
+    <meta name="keywords" content="voce,povrce,zitarice,sok,kupovina"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="images/logo.png"/>
+    <title>Zdrava hrana</title>
+</head>
+<body>
+    
+
+    <nav>
+
+        <div class="logo"></div>
+
+        <div class="meni"></div>
+
+    </nav>
+    <div class="sideNavigation">
+        <div class="logo">   
+        </div>
+        <div class="meni">
+        </div>
+    </div>
+    <div id='pojaviSide'><a href="#" ><i class="fas fa-bars"></i></a></div>
+    <section class="prodavnica container-fluid">
+        <h2>Prodavnica</h2>
+        <div id="prodavnicaIzbori">
+
+            <div id="izborGlavni"></div>
+
+            <div id="podKategDrop"></div>
+
+            <div id="sortiranje">
+
+                <select name="sort" id="sort">
+
+                    <option value="0">Soritraj po</option>
+                    <option value="asce">Cena : Rastuce</option>
+                    <option value="desc">Cena : Opadajuce</option>
+                    <option value="aToz">Naziv : A-Z</option>
+                    <option value="zToa">Naziv : Z-A</option>
+
+                </select>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class='shop container-fluid'>
+
+        <div class='row rowProd'>
+
+            <!-- <div class="col-lg-4 prodCol">
+
+                <div class="proizvod">
+
+                    <div class="pictureProd">
+
+                        <img src="images/apple.png" class='img-fluid' alt="Apple"/>
+
+                    </div>
+
+                    <div class="infoProd">
+
+                        <h3>Naziv</h3>
+
+                        <div class="vrsta">
+
+                            <h4>Vrsta</h4>
+
+                            <p>Nesto, nesto</p>
+
+                        </div>
+
+                        <p>Cena : 100din.</p>
+
+                        <button class='poruciProd'>Poruci</button>
+
+                    </div>
+
+                </div>
+
+            </div> -->
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="copyright">
+            <p>&copy Golubović 2020/21</p>
+        </div>
+        <div id="aboutSite">
+            <ul>
+                <li><a href="sitemap.xml">Sitemap</a></li>
+            
+            
+                <li><a href="css/style.css">css</a></li>
+            
+            
+                <li><a href="sitemap.xml">sitemap</a></li>
+            
+            
+                <li><a href="dokumentacija.pdf" download="download">dokumentacija</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src='js/main.js'></script>
+    <script src='js/prodavnica.js'></script>
+    <script src='js/korpa.js'></script>
+
+</body>
+</html>
